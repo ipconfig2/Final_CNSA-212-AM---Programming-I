@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC734D8D-20F6-45C9-9A99-85E570A8528F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalPhysicianApp</RootNamespace>
+    <AssemblyName>FinalPhysicianApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLookUp.Designer.cs">
+      <DependentUpon>frmLookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMDI.Designer.cs">
+      <DependentUpon>frmMainMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModPatient.Designer.cs">
+      <DependentUpon>frmModPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModPhysician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModPhysician.Designer.cs">
+      <DependentUpon>frmModPhysician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrescription.Designer.cs">
+      <DependentUpon>frmPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRenewal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRenewal.Designer.cs">
+      <DependentUpon>frmRenewal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisits.Designer.cs">
+      <DependentUpon>frmVisits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prescDataTier.cs" />
+    <Compile Include="XYZ_IncDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XYZ_IncDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLookUp.resx">
+      <DependentUpon>frmLookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMDI.resx">
+      <DependentUpon>frmMainMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModPatient.resx">
+      <DependentUpon>frmModPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModPhysician.resx">
+      <DependentUpon>frmModPhysician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrescription.resx">
+      <DependentUpon>frmPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRenewal.resx">
+      <DependentUpon>frmRenewal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisits.resx">
+      <DependentUpon>frmVisits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="XYZ_IncDataSet.xsc">
+      <DependentUpon>XYZ_IncDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="XYZ_IncDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>XYZ_IncDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XYZ_IncDataSet.xss">
+      <DependentUpon>XYZ_IncDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
