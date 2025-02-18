@@ -15,8 +15,7 @@ A comprehensive healthcare management solution consisting of two interconnected 
 - **Patient Management:** Complete patient records and visit history
 - **Prescription Writing:** Digital prescription creation with direct pharmacy submission
 - **Medical Records:** Digital charting and visit documentation
-- **Lab Results:** Integration with laboratory systems
-
+  
 ## Technical Details
 
 ### Architecture
